@@ -9,6 +9,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
   apt-get install -y --no-install-recommends \
     build-essential \
+    clang-15 \
     distcc && \
   rm -rf /var/lib/apt/lists/*
 
